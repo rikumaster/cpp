@@ -32,6 +32,7 @@ void GraphicInterface::start() {
 	al_draw_text(font_48, al_map_rgb(255, 255, 255), 1050, 200, ALLEGRO_ALIGN_CENTRE, "spacja by rozpaczac");
 	al_draw_text(font_48, al_map_rgb(255, 255, 255), 1050, 300, ALLEGRO_ALIGN_CENTRE, "[Losuj]");
 	//delete font_48;
+	al_destroy_font(font_48);
 }
 
 //void GraphicInterface::music() {
@@ -58,6 +59,7 @@ void GraphicInterface::timesLeft(int tl, float speed) {
 	al_draw_text(font_48, al_map_rgb(255, 255, 255), 1050, 250, ALLEGRO_ALIGN_CENTRE, "Aktualna predkosc");
 	al_draw_text(font_48, al_map_rgb(255, 255, 255), 1050, 300, ALLEGRO_ALIGN_CENTRE, spd.c_str());
 	//delete font_48;
+	al_destroy_font(font_48);
 }
 
 
